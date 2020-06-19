@@ -1,0 +1,59 @@
+
+.container {
+    position: relative;
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin: 15px;
+    
+  }
+  
+  .div-container {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  
+  .gallery__img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    
+  }
+  
+  .overlayImg {
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    background-color: #eee;
+
+    
+  }
+  
+  .container:hover .overlayImg {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #c51a00;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  
+  .overlayLeft {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .container:hover .overlayLeft {
+    width: 100%;
+  }
+  

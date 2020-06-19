@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --build-optimizer=false",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts4": "^4.9.27",
+    "@amcharts/amcharts4-geodata": "^4.1.15",
     "@angular/animations": "~9.1.11",
     "@angular/common": "~9.1.11",
     "@angular/compiler": "~9.1.11",
@@ -19,6 +21,7 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
+    "ng-worldmap": "^1.2.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
